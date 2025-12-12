@@ -1,12 +1,18 @@
 export type TypeRootStackParamList = {
     Auth: undefined
 	Home: undefined
-	Profile: undefined
+	Training: undefined
     Statistics: undefined
-    Training: undefined
+	Profile: undefined
+	BasicAbilities: undefined
+	FAQ: undefined
+	PrivacyPolicy: undefined
+	Works: undefined
+	TermsConditions: undefined
+	EditProfile: undefined
 }
 
 export interface IRoute {
 	name: keyof TypeRootStackParamList
-	component: React.ComponentType
+	component: React.ComponentType<any>
 }

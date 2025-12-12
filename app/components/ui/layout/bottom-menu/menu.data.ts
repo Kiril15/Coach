@@ -6,15 +6,15 @@ export const menuData: IMenu[] = [
         iconName: "home"
     },
     {
-        path: 'Profile',
-        iconName: 'user'
+        path: 'Training',
+        iconName: 'activity'
     },
     {
         path: 'Statistics',
         iconName: 'bar-chart-2'
     },
     {
-        path: 'Training',
-        iconName: 'activity'
-    }
+        path: 'Profile',
+        iconName: 'user'
+    },
 ]

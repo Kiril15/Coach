@@ -3,8 +3,15 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
-		"paths": {
-			"@/*": ["./app/*"]
-		}
-  }
+    "paths": {
+      "@/*": [
+        "./app/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "nativewind-env.d.ts"
+  ]
 }

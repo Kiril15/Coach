@@ -3,30 +3,41 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { TypeRootStackParamList } from "./navigation.types"
 import { routes } from './routes'
 import Auth from "@/components/screens/auth/Auth"
+import BasicAbilities from "@/components/screens/basicAbilities/BasicAbilities"
 
 const Stack = createNativeStackNavigator<TypeRootStackParamList>()
 
 const PrivateNavigation = () => {
-    const {user} = useAuth()
+    const { user } = useAuth();
 
     return (
-        <Stack.Navigator 
+        <Stack.Navigator
             screenOptions={{
-				headerShown: false,
-				contentStyle: {
-					backgroundColor: '#0B0C0C'
-				}
-			}}
+                headerShown: false,
+                contentStyle: {
+                    backgroundColor: '#0B0C0C'
+                }
+            }}
         >
-            {user ? (
+            {!user && (
+                <Stack.Screen name="Auth" component={Auth} />
+            )}
+
+            {user && !user.isVerified && (
+                <Stack.Screen name="BasicAbilities" component={BasicAbilities} />
+            )}
+
+            {user && user.isVerified && (
                 routes.map(item => (
-                    <Stack.Screen name={item.name} component={item.component}/>
+                    <Stack.Screen 
+                        key={item.name}
+                        name={item.name} 
+                        component={item.component}
+                    />
                 ))
-            ) : (
-                <Stack.Screen name="Auth" component={Auth}/>
             )}
         </Stack.Navigator>
-    )
-}
+    );
+};
 
 export default PrivateNavigation

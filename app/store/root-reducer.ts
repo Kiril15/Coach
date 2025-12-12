@@ -1,6 +1,12 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import { authSlice } from "./auth/auth.slice";
+import { mailSlice } from "./mail/mail.slice";
+import { basicAbilitiesSlice } from "./basicAbilities/basikAbilities.slice";
+import { userSlice } from "./user/user.slice";
+import { dayliTipSlice } from "./dayliTip/dayliTip.slice";
 
 export const rootReducer = combineReducers({
-    auth: authSlice.reducer
+    mail: mailSlice.reducer,
+    basicAbilities: basicAbilitiesSlice.reducer,
+    user: userSlice.reducer,
+    dayliTip: dayliTipSlice.reducer
 })

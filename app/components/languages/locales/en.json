@@ -1,0 +1,230 @@
+{
+    "Error": "Error",
+    "onboarding": {
+        "title": "Level",
+        "subtitle": "Let’s personalize your training experience. We’ll start with a few basics.",
+        "selectLanguage": "Select your language",
+        "abilitiesTitle": "What can you do?",
+        "pullUps": "Pull-ups",
+        "pushUps": "Push-ups",
+        "dips": "Dips",
+        "reps": "Reps",
+        "bodyStatsTitle": "Your body stats",
+        "weight": "Weight",
+        "height": "Height",
+        "age": "Age",
+        "kg": "kg",
+        "cm": "cm",
+        "next": "Next",
+        "required": "Required",
+        "numbersOnly": "Numbers only",
+        "weightMin": "Weight must be at least 30 kg",
+        "weightMax": "Weight must be less than 300 kg",
+        "heightMin": "Height must be at least 100 cm",
+        "heightMax": "Height must be less than 250 cm",
+        "ageMin": "Age must be at least 9 years",
+        "ageMax": "Age must be less than 90 years",
+        "injuryLabel": "Do you have an injury?",
+        "injuryPlaceholder": "Describe your injury",
+        "hasInjury_yes": "✔ I have an injury",
+        "hasInjury_no": "I don’t have injuries",
+        "maxLength": "Too long"
+    },
+    "profile": {
+        "sectionAbilitiesTitle": "Abilities",
+        "sectionStatsTitle": "Stats",
+        "sectionHelpInfoTitle": "Help & Info",
+        "statusHealthy": "✓ Healthy",
+        "unitYrs": "yrs",
+        "menuFAQ": "FAQ",
+        "menuHowItWorks": "How it works",
+        "menuTerms": "Terms & Conditions",
+        "menuPrivacy": "Privacy Policy",
+        "premiumTitle": "Unlock Full Potential",
+        "premiumSubtitle": "Advanced workouts, AI coach & more",
+        "premiumLabel": "Premium",
+        "statLevel": "Level",
+        "statXP": "XP",
+        "statStreak": "Streak",
+        "edit": "Edit",
+        "logout": "Logout",
+        "delete": "Delete"
+    },
+    "edit": {
+        "save": "Save",
+        "changeAvatar": "Tap to change avatar"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Everything you need to know about SW | Coach",
+        
+        "question1": "What is SW | Coach?",
+        "answer1": "SW | Coach is a platform designed to calculate personalized training programs based on your physical data (weight, height, age), current abilities (pull-ups, push-ups, dips), and today's condition. We help you progress safely and effectively.",
+        
+        "question2": "How do I start training?",
+        "answer2": "After registration, fill out the 'Basic Skills' section in your profile, indicating the maximum number of repetitions for main exercises. Our system uses this data to generate your first personalized program.",
+        
+        "question3": "What audience is the app focused on?",
+        "answer3": "The app is designed for users practicing calisthenics (bodyweight exercises), regardless of their current fitness level.",
+        
+        "question4": "What's included in the premium subscription?",
+        "answer4": "The premium subscription includes: technique analysis based on photos and expanded training categories.",
+        
+        "question5": "How does the AI coach work?",
+        "answer5": "The GPT-powered AI coach analyzes your data, workout history, and current condition to provide personalized advice on technique, recovery, and program adjustments. You can ask questions anytime.",
+        
+        "question6": "Do I need equipment for workouts?",
+        "answer6": "Basic programs are designed for bodyweight training and require minimal equipment: pull-up bar and parallel bars. Additionally, you can use gymnastics rings, resistance bands, and other calisthenics accessories.",
+        
+        "question7": "How often is the training program updated?",
+        "answer7": "The program automatically adapts based on your results. We recommend updating basic skills every 2-4 weeks for more accurate personalization. The AI coach can also adjust the program in real-time.",
+        
+        "question8": "Can I use the app offline?",
+        "answer8": "Yes, after downloading the training program, you can use the app without internet. However, AI consultations and data synchronization require network connection.",
+        
+        "question9": "How do I cancel my subscription?",
+        "answer9": "You can cancel your subscription anytime through App Store or Google Play settings. After cancellation, you'll retain access to premium features until the end of the paid period.",
+        
+        "question10": "Is the app suitable for beginners?",
+        "answer10": "Absolutely! The system adapts the program to any level — from complete beginner to advanced athlete. For beginners, we offer simplified exercise variations and gradual progression.",
+        
+        "contactLabel": "Support",
+        "contactTitle": "Didn't find an answer?",
+        "contactSubtitle": "Contact our support team, we're always happy to help!",
+        "contactButton": "Contact Support"
+    },
+    "howItWorks": {
+        "label": "Guide",
+        "title": "How It Works",
+        "subtitle": "A simple process to achieve your fitness goals",
+        
+        "step1Title": "Create Profile",
+        "step1Description": "Sign up and provide your basic data: weight, height, age. This helps the system understand your baseline parameters.",
+        
+        "step2Title": "Define Abilities",
+        "step2Description": "Indicate your maximum repetitions in basic exercises: pull-ups, push-ups, and dips. The system will assess your current level.",
+        
+        "step3Title": "AI Creates Program",
+        "step3Description": "Based on your data, artificial intelligence automatically generates a personalized training program adapted to your level.",
+        
+        "step4Title": "Train",
+        "step4Description": "Follow the created program, mark completed exercises and sets. The system tracks your progress and adjusts the load.",
+        
+        "step5Title": "Progress",
+        "step5Description": "Regularly update your metrics. The program automatically adapts, increasing the load as your abilities grow.",
+        
+        "featuresTitle": "Key Features",
+        
+        "feature1Title": "Smart Adaptation",
+        "feature1Description": "The program automatically adjusts to your current condition, considering fatigue, injuries, and progress.",
+        
+        "feature2Title": "Safety First",
+        "feature2Description": "The system takes into account your injuries and physical limitations, offering safe exercise alternatives.",
+        
+        "feature3Title": "Continuous Development",
+        "feature3Description": "The program evolves with you, gradually increasing complexity to achieve maximum results.",
+        
+        "ctaLabel": "Start Now",
+        "ctaTitle": "Ready to Start?",
+        "ctaSubtitle": "Join thousands of users who are already achieving their goals",
+        "ctaButton": "Start Training"
+    },
+    "terms": {
+        "label": "Legal Information",
+        "title": "Terms & Conditions",
+        "subtitle": "Please read these terms of use carefully",
+        "lastUpdated": "Last updated: November 27, 2024",
+        
+        "section1Title": "Acceptance of Terms",
+        "section1Content": "By using the SW | Coach application, you agree to these Terms and Conditions. If you disagree with any part of these terms, please do not use our application. We reserve the right to modify these terms at any time, and your continued use of the application will constitute acceptance of the changes.",
+        
+        "section2Title": "Service Description",
+        "section2Content": "SW | Coach provides personalized training programs based on user data. The service includes exercise program generation, progress tracking, and AI consultations (for premium users). We do not guarantee specific results and are not responsible for injuries sustained during workouts.",
+        
+        "section3Title": "Registration and Account",
+        "section3Content": "You are responsible for the confidentiality of your account and password. You agree to provide accurate and current information during registration. You must be at least 9 years old to use the application. We reserve the right to suspend or delete accounts that violate these terms.",
+        
+        "section4Title": "Premium Subscription",
+        "section4Content": "Premium subscription provides access to advanced features, including AI coach and technique analysis. Subscription automatically renews unless cancelled 24 hours before the end of the current period. Payment is charged through your App Store or Google Play account. Refunds are subject to the app store's policy.",
+        
+        "section5Title": "Content Usage",
+        "section5Content": "All materials in the application, including text, graphics, training programs, and AI models, are copyrighted and owned by SW | Coach. You receive a limited license to use the application for personal, non-commercial purposes. Copying, distributing, or modifying application content is prohibited.",
+        
+        "section6Title": "Medical Disclaimer",
+        "section6Content": "The application does not replace professional medical advice. Consult a doctor before starting any exercise program, especially if you have health issues. We are not responsible for injuries or health problems resulting from using our programs.",
+        
+        "section7Title": "Limitation of Liability",
+        "section7Content": "SW | Coach is provided 'as is' without any warranties. We are not liable for direct, indirect, or incidental damages resulting from the use or inability to use the application. Our maximum liability is limited to the amount you paid for the subscription in the last 12 months.",
+        
+        "section8Title": "Termination",
+        "section8Content": "We reserve the right to terminate or suspend your access to the application at any time for any reason without prior notice. You may stop using the application at any time by deleting it from your device. Upon termination, all licenses and rights granted to you immediately cease.",
+        
+        "contactLabel": "Contact",
+        "contactTitle": "Questions about terms?",
+        "contactContent": "If you have questions regarding these Terms and Conditions, contact us at: support@swcoach.app"
+    },
+    "privacy": {
+        "label": "Privacy",
+        "title": "Privacy Policy",
+        "subtitle": "Learn how we collect, use, and protect your data",
+        "lastUpdated": "Last updated: November 27, 2024",
+        
+        "section1Title": "Introduction",
+        "section1Content": "SW | Coach respects your privacy and is committed to protecting your personal data. This Privacy Policy explains what information we collect, how we use, store, and protect it. By using our application, you agree to the collection and use of information in accordance with this policy.",
+        
+        "section2Title": "Information Collected",
+        "section2Content": "We collect information you provide during registration: name, email, age, weight, height, and data about your physical abilities (number of exercise repetitions). We also collect data about your app usage: workout history, progress, AI coach interactions, and technical device data.",
+        
+        "section3Title": "Use of Information",
+        "section3Content": "Your data is used to: create personalized training programs, track your progress, provide AI consultations, improve service quality, process subscription payments, and contact you on important matters. We do not sell your personal data to third parties.",
+        
+        "section4Title": "Data Storage",
+        "section4Content": "Your data is stored on secure servers using encryption. We retain your information while your account is active or as needed to provide services. After account deletion, your personal data is removed within 30 days, except for data we are legally required to retain.",
+        
+        "section5Title": "Data Sharing",
+        "section5Content": "We may share your data with: cloud service providers for data storage, payment systems for subscription processing, AI service providers (OpenAI) for chat functionality, analytics services to improve the app. All third parties are required to maintain the confidentiality and security of your data.",
+        
+        "section6Title": "Data Security",
+        "section6Content": "We use modern security technologies: data encryption in transit (SSL/TLS), data encryption at rest, regular security audits, limited employee access to personal data. However, no method of internet transmission is completely secure, and we cannot guarantee absolute security.",
+        
+        "section7Title": "Your Rights",
+        "section7Content": "You have the right to: access your personal data, correct inaccurate data, delete your data (right to be forgotten), restrict processing of your data, export your data, withdraw consent for data processing. To exercise these rights, contact us at support@swcoach.app.",
+        
+        "section8Title": "Cookies and Analytics",
+        "section8Content": "We use tracking technologies to improve user experience: analytical cookies to understand app usage, functional cookies to save settings, analytics services (Firebase Analytics) for statistics collection. You can disable analytics in app settings.",
+        
+        "section9Title": "Policy Changes",
+        "section9Content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy in the app and updating the last updated date. We recommend reviewing this page periodically. Continued use of the app after changes constitutes acceptance of the updated policy.",
+        
+        "contactLabel": "Contact",
+        "contactTitle": "Questions about privacy?",
+        "contactContent": "If you have questions regarding this Privacy Policy or processing of your data, contact us at: privacy@swcoach.app"
+    },
+    "home": {
+        "memberSince": "Member since",
+        "premiumMember": "Premium Member",
+        "freeMember": "Free Member",
+        "tipTitle": "Tip of the Day",
+        "tipDefault": "Recovery is just as important as the workout itself. Get 7-9 hours of sleep for optimal muscle growth.",
+        "tipError": "Failed to load tip",
+        "tipRetry": "Retry",
+        "tipType": {
+            "recovery": "Recovery",
+            "nutrition": "Nutrition",
+            "training": "Training",
+            "motivation": "Motivation"
+        },
+        "readyToTrain": "Ready to workout?",
+        "goodMorning": "Good Morning",
+        "goodAfternoon": "Good Afternoon",
+        "goodEvening": "Good Evening",
+        "weeklyGoals": "Weekly Goals",
+        "overallProgress": "Overall Progress",
+        "challenge1": "Complete 3 workouts",
+        "challenge2": "5-day streak",
+        "allGoalsCompleted": "All goals completed!",
+        "keepGoing": "Keep going!",
+        "hideAll": "hide all",
+        "showAll": "show all"
+    }
+}

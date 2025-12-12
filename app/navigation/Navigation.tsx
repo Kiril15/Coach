@@ -5,6 +5,7 @@ import { useNavigationContainerRef } from '@react-navigation/native'
 import BottomMenu from '@/components/ui/layout/bottom-menu/BottomMenu'
 import { NavigationContainer } from '@react-navigation/native'
 import PrivateNavigation from './PrivateNavigation'
+import { TypeRootStackParamList } from './navigation.types'
 
 const Navigation: FC = () => {
 	const {user} = useAuth()
@@ -12,7 +13,7 @@ const Navigation: FC = () => {
 		undefined
 	)
 
-	const navRef = useNavigationContainerRef()
+	const navRef = useNavigationContainerRef<TypeRootStackParamList>()
 
 	useEffect(() => {
 		setCurrentRoute(navRef.getCurrentRoute()?.name)
@@ -30,7 +31,7 @@ const Navigation: FC = () => {
 	return (
 		<NavigationContainer ref={navRef}>
 			<PrivateNavigation />
-			{user && currentRoute && (
+			{user?.isVerified && currentRoute && (
 				<BottomMenu currentRoute={currentRoute} nav={navRef.navigate} />
 			)}
 		</NavigationContainer>

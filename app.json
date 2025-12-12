@@ -1,30 +1,40 @@
 {
   "expo": {
-    "name": "SW | Coach",
-    "slug": "SW | Coach",
+    "name": "SW Coach",
+    "slug": "sw-coach",
+    "scheme": "swcoach",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coach"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "package": "com.coach",
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "GOOGLE_ANDROID_ID": "836351561772-mtp9hagsb8fvmlbdfebjl3dn016jr5o6.apps.googleusercontent.com",
+      "GOOGLE_IOS_ID": "836351561772-sphphq8fsdr6ak14ulb4vudbl2aq9iu8.apps.googleusercontent.com",
+      "GOOGLE_WEB_ID": "836351561772-d99pdrpoub42052mo1lltrnhqah91thv.apps.googleusercontent.com",
+      "eas": {
+        "projectId": "ec529f12-4f8c-4b0e-aa05-e0270a82daf5"
+      }
     }
   }
 }

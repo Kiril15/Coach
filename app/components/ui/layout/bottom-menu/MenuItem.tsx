@@ -3,6 +3,7 @@ import { Feather } from "@expo/vector-icons"
 import { FC } from "react"
 import { IMenu, TypeNav } from "./menu.interface"
 import { AppConstants } from "@/app.constants"
+import { Platform } from "react-native"
 
 interface IMenuItem {
     item: IMenu
@@ -10,32 +11,30 @@ interface IMenuItem {
     currentRoute?: string
 }
 
-const MenuItem: FC<IMenuItem> = ({item, nav, currentRoute}) => {
+const MenuItem: FC<IMenuItem> = ({ item, nav, currentRoute }) => {
     const isActive = currentRoute === item.path
 
     return (
         <Pressable
             onPress={() => nav(item.path)}
-            style={
-				isActive
-					? {
-							padding: 5,
-							borderRadius: 25,
-							shadowColor: AppConstants.primary,
-							shadowOffset: {
-								width: 0,
-								height: 5
-							},
-							shadowOpacity: 0.6,
-							shadowRadius: 8,
-							elevation: 20
-						}
-					: {}
-			}
+            style={{
+                height: 40,
+                width: 50,
+                justifyContent: "center",
+                alignItems: "center",
+
+                ...(isActive && {
+                    shadowColor: AppConstants.primary,
+                    shadowOffset: { width: 0, height: 4 },
+                    shadowOpacity: 0.7,
+                    shadowRadius: 6,
+                    elevation: Platform.OS === "android" ? 8 : 0,
+                }),
+            }}
         >
             <Feather
                 name={item.iconName}
-                size={26}
+                size={24}
                 color={isActive ? AppConstants.primary : "#999999"}
             />
         </Pressable>
