@@ -1,15 +1,13 @@
-import { lazy } from 'react';
+import Home from "@/components/screens/home/Home";
 import { IRoute } from "./navigation.types";
-
-const Home = lazy(() => import("@/components/screens/home/Home"));
-const Training = lazy(() => import("@/components/screens/training/Training"));
-const Statistics = lazy(() => import("@/components/screens/statistics/Statistics"));
-const Profile = lazy(() => import("@/components/screens/profile/Profile"));
-const FAQ = lazy(() => import("@/components/screens/information/FAQ"));
-const PrivacyPolicy = lazy(() => import("@/components/screens/information/PrivacyPolicy"));
-const Works = lazy(() => import("@/components/screens/information/Works"));
-const TermsConditions = lazy(() => import("@/components/screens/information/TermsConditions"));
-const EditProfile = lazy(() => import("@/components/screens/edits/EditProfile"));
+import Profile from "@/components/screens/profile/Profile";
+import Statistics from "@/components/screens/statistics/Statistics";
+import Training from "@/components/screens/training/Training";
+import FAQ from "@/components/screens/information/FAQ";
+import PrivacyPolicy from "@/components/screens/information/PrivacyPolicy";
+import Works from "@/components/screens/information/Works";
+import TermsConditions from "@/components/screens/information/TermsConditions";
+import EditProfile from "@/components/screens/edits/EditProfile";
 
 export const routes: IRoute[] = [
     {
@@ -48,4 +46,4 @@ export const routes: IRoute[] = [
         name: 'EditProfile',
         component: EditProfile
     },
-];
+]

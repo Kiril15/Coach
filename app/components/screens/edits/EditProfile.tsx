@@ -15,6 +15,7 @@ import { updateBasicAbilities, getBasicAbilities } from '@/store/basicAbilities/
 import { useTypesDispatch } from '@/components/hooks/useTypedDispatch';
 import Loader from '@/components/ui/layout/Loader';
 import EditForm from './widgets/EditForm';
+import BackArrow from '@/components/ui/layout/BackArrow';
 
 const EditProfile: FC = () => {
     const { t } = useTranslation();
@@ -65,7 +66,8 @@ const EditProfile: FC = () => {
 
     return (
         <Layout>
-            <View>
+            <View className='relative w-5/6 mx-auto'>
+                <BackArrow styles='absolute -top-7'/>
                 <View className='my-8'>
                     <AvatarUpload />
                 </View>

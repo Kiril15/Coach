@@ -11,9 +11,7 @@ import {
     UpdatePayload
 } from "@/types/user.interface";
 import { FileUploadPayload } from "./user.interface";
-import streakService from "@/services/user/dayStrick/streak.service";
-import challengeService from "@/services/user/challenge/challenge.service";
-import { IChallenge } from "@/types/challenge.interface";
+import * as SecureStore from 'expo-secure-store'
 
 export const register = createAsyncThunk<any, IAuthFormData>(
     'auth/register',
@@ -37,10 +35,30 @@ export const login = createAsyncThunk<IAuthResponse, IAuthFormData>(
     }
 )
 
-export const logout = createAsyncThunk('auth/logout', async () => {
-    await AuthService.logout()
-    return {}
-})
+export const logout = createAsyncThunk(
+    'auth/logout', 
+    async () => {
+        await AuthService.logout()
+        return {}
+    }
+)
+
+export const checkUser = createAsyncThunk(
+    'user/get',
+    async (_, thunkApi) => {
+        try {
+            const token = await SecureStore.getItemAsync('accessToken')
+    
+            if (!token) {
+                return thunkApi.rejectWithValue('No token');
+            }
+            
+            return await userService.getUser()
+        } catch (e) {
+            return thunkApi.rejectWithValue(e);
+        }
+    }
+)
 
 export const getUploadSignature = createAsyncThunk<UploadSignatureResponse>(
     'user/getUploadSignature',

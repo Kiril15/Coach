@@ -69,6 +69,11 @@ const userService = {
     async deleteUser() {
         const response = await instance.delete(`user`)
         return response.data
+    },
+
+    async getUser() {
+        const response = await instance.get('user')
+        return response.data
     }
 
     // async resetStreak() {

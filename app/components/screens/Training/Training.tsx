@@ -5,6 +5,7 @@ import { View, Text } from 'react-native';
 const Training = () => {
     return (
         <Layout>
+            
         </Layout>
     );
 };

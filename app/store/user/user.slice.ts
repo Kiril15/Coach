@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IUserInitialState } from "./user.interface";
-import { register, login, logout, updateExp, uploadAvatar, updateAvatar, deleteUser } from "./user.actions";
+import { register, login, logout, updateExp, uploadAvatar, updateAvatar, deleteUser, checkUser } from "./user.actions";
 import { getUserChallenges, initializeUserChallenges, updateChallengeProgress, claimChallengeReward } from "../challenge/challenge.action";
 import { createBasicAbilities } from "../basicAbilities/basicAbilities.actions";
 import i18n from "@/components/languages/i18n";
@@ -60,6 +60,17 @@ export const userSlice = createSlice({
                 state.isLoading = false;
                 state.user = null;
                 state.error = 'Incorrect login or password';
+            })
+
+            // check token
+            .addCase(checkUser.pending, (state) => {
+                state.isLoading = true;
+                state.error = null;
+            })
+            .addCase(checkUser.fulfilled, (state, { payload }) => {
+                state.user = payload; 
+                state.isLoading = false;
+                state.error = null;
             })
             
             // Logout
